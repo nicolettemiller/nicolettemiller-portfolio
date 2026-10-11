@@ -4,29 +4,29 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Nicolette Miller — Full Stack Engineer",
   description:
-    "Full Stack Software Engineer building thoughtful healthcare applications at UCSF.",
+    "Full stack engineer building production clinical software at UCSF.",
 };
 
 const skills = [
-  "Python", "Flask", "JavaScript", "TypeScript",
-  "D3.js", "Ruby on Rails", "PostgreSQL", "MySQL",
-  "Docker", "Nginx", "Git", "Unix/Linux",
-  "RESTful APIs", "EHR Integration", "Data Visualization",
-  "UX Research", "Human-Centered Design", "Agile/Scrum",
+  "Python", "JavaScript", "SQL", "Ruby",
+  "Flask", "Ruby on Rails", "D3.js", "jQuery",
+  "PostgreSQL", "MySQL", "Docker", "Git", "Postman", "Unix/Linux",
+  "EHR Integration (SMART on FHIR)", "HIPAA/PHI", "RESTful APIs",
+  "Data Visualization", "UX Research",
 ];
 
 const projects = [
   {
     name: "BRIDGE",
     description:
-      "Clinician-facing full stack web application integrated with UCSF's EHR system, supporting real-time patient monitoring across six departments.",
-    tags: ["Python", "Flask", "D3.js", "PostgreSQL", "Docker"],
+      "Clinician-facing platform integrated with Epic via SMART on FHIR, used by 30+ clinicians across 8 departments. I own 5 of its 9 production dashboards (plus 2 in development) — including perimenopause, adolescent depression, and TBI — and integrated 7 of its real-time data sources, from Epic EHR data to clinical prediction models, with no persistent storage of PHI.",
+    tags: ["Python", "Flask", "D3.js", "SMART on FHIR", "Docker"],
     type: "UCSF · Production",
   },
   {
     name: "Open MS Bioscreen",
     description:
-      "Patient-facing application for self-reported health metrics, enabling longitudinal tracking for multiple sclerosis research.",
+      "Patient-facing application for self-reported health metrics with 600+ registered accounts, enabling longitudinal tracking for multiple sclerosis research. I oversee feature development and production reliability.",
     tags: ["Ruby on Rails", "PostgreSQL", "JavaScript"],
     type: "UCSF · Production",
   },
@@ -70,9 +70,10 @@ export default function Home() {
           I build software that helps people.
         </h1>
         <p className="text-lg text-[#6B5B5B] leading-relaxed">
-          Six years at UCSF building clinician-facing and patient-facing healthcare
-          applications — from EHR integrations to interactive data visualizations.
-          I care about the people on the other side of the screen.
+          6+ years building production clinical software inside UCSF&apos;s health
+          system — from Epic integrations to interactive data visualizations. I partner
+          with clinicians from discovery through deployment and adoption, and I care
+          about the people on the other side of the screen.
         </p>
         <div className="flex gap-4 mt-10">
           <a
@@ -110,13 +111,15 @@ export default function Home() {
               <h2 className="font-serif text-3xl text-[#1C1C1E]">Application Engineer III</h2>
               <p className="text-[#6B5B5B] mt-1">UCSF Weill Institute for Neurosciences · Bove Lab</p>
             </div>
-            <span className="text-sm text-[#6B5B5B] whitespace-nowrap ml-4">2020 – Present</span>
+            <span className="text-sm text-[#6B5B5B] whitespace-nowrap ml-4">July 2023 – Present</span>
           </div>
           <p className="text-[#1C1C1E] leading-relaxed mt-4">
-            Promoted from Engineer II based on technical execution and full application ownership.
-            Lead 3–5 concurrent projects end-to-end — from user research with clinicians and patients
-            through design, development, deployment, and maintenance in a production healthcare environment.
-            Co-author on multiple peer-reviewed publications.
+            Promoted twice, most recently from Engineer II to III. Served as sole engineer on BRIDGE
+            for 9 months after my mentor&apos;s departure, keeping it reliable in production while
+            continuing feature development. I partner with clinicians on discovery and workflow scoping
+            for new dashboards, build interactive D3.js visualizations that help clinicians read patient
+            trends at a glance, and drove the hiring of our current tech lead. Co-author on multiple
+            peer-reviewed publications, first author on one, with a second in progress.
           </p>
         </div>
 
@@ -149,6 +152,29 @@ export default function Home() {
             </div>
           ))}
         </div>
+
+        {/* Earlier UCSF Role */}
+        <div className="mt-16">
+          <div className="flex justify-between items-start mb-3">
+            <div>
+              <h2 className="font-serif text-2xl text-[#1C1C1E]">Application Programmer</h2>
+              <p className="text-[#6B5B5B] mt-1">UCSF Weill Institute for Neurosciences · Bove Lab</p>
+            </div>
+            <span className="text-sm text-[#6B5B5B] whitespace-nowrap ml-4">Jun 2020 – Nov 2021</span>
+          </div>
+          <p className="text-[#1C1C1E] leading-relaxed mt-4">
+            Built dynamic, data-driven surveys in Ruby on Rails for clinical research data collection,
+            and refactored front-end interfaces to improve accessibility for patients with neurological
+            conditions.
+          </p>
+        </div>
+
+        {/* Education */}
+        <div className="mt-16">
+          <p className="text-sm uppercase tracking-widest text-[#7D2B3B] mb-4">Education</p>
+          <h3 className="font-serif text-xl text-[#1C1C1E]">B.S. in Computer Science</h3>
+          <p className="text-[#6B5B5B] mt-1">University of California, Santa Cruz</p>
+        </div>
       </section>
 
       {/* Divider */}
@@ -180,10 +206,10 @@ export default function Home() {
       <section className="max-w-5xl mx-auto px-6 py-20">
         <p className="text-sm uppercase tracking-widest text-[#7D2B3B] mb-6">Get in touch</p>
         <h2 className="font-serif text-4xl text-[#1C1C1E] mb-6">
-          Let's work together.
+          Let&apos;s work together.
         </h2>
         <p className="text-[#6B5B5B] leading-relaxed mb-8 max-w-md">
-          I'm currently open to new opportunities — full stack engineering roles,
+          I&apos;m currently open to new opportunities — full stack engineering roles,
           healthtech, and mission-driven teams.
         </p>
         <a
