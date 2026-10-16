@@ -38,7 +38,7 @@ export default function Home() {
 
       {/* Nav */}
       <nav className="max-w-5xl mx-auto px-6 py-8 flex justify-between items-center">
-        <span className="font-serif text-lg text-[#1C1C1E]">Nicolette Miller</span>
+        <span className="font-serif text-2xl md:text-3xl text-[#1C1C1E]">Nicolette Miller</span>
         <div className="flex gap-6 text-sm text-[#6B5B5B]">
           <a href="#work" className="hover:text-[#2D6B6B] transition-colors">Work</a>
           <a href="#skills" className="hover:text-[#2D6B6B] transition-colors">Skills</a>
@@ -53,45 +53,47 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section className="max-w-5xl mx-auto px-6 pt-16 pb-24">
+      <section className="max-w-5xl mx-auto px-6 pt-16 pb-24 flex flex-col md:flex-row-reverse md:items-center md:gap-16">
         <Image
           src="/headshot.jpeg"
           alt="Nicolette Miller"
-          width={200}
-          height={200}
-          className="rounded-full mb-8 object-cover ring-4 ring-[#7D2B3B]"
-          style={{ width: 200, height: 200 }}
+          width={288}
+          height={288}
+          preload
+          className="rounded-full mb-8 md:mb-0 object-cover ring-4 ring-[#7D2B3B] w-[200px] h-[200px] md:w-72 md:h-72 shrink-0"
         />
 
-        <p className="text-sm uppercase tracking-widest text-[#7D2B3B] mb-6">
-          Full Stack Software Engineer
-        </p>
-        <h1 className="font-serif text-5xl leading-relaxed mb-8 text-[#1C1C1E]">
-          I build software that helps people.
-        </h1>
-        <p className="text-lg text-[#6B5B5B] leading-relaxed">
-          6+ years building production clinical software inside UCSF&apos;s health
-          system — from Epic integrations to interactive data visualizations. I partner
-          with clinicians from discovery through deployment and adoption, and I care
-          about the people on the other side of the screen.
-        </p>
-        <div className="flex gap-4 mt-10">
-          <a
-            href="https://www.linkedin.com/in/nicolette-miller-67a843132/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-[#1C1C1E] border border-[#1C1C1E] px-5 py-2.5 rounded-full hover:bg-[#1C1C1E] hover:text-[#FAF7F4] transition-all"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="https://github.com/nicolettemiller"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-[#1C1C1E] border border-[#1C1C1E] px-5 py-2.5 rounded-full hover:bg-[#1C1C1E] hover:text-[#FAF7F4] transition-all"
-          >
-            GitHub
-          </a>
+        <div>
+          <p className="text-sm uppercase tracking-widest text-[#7D2B3B] mb-6">
+            Full Stack Software Engineer
+          </p>
+          <h1 className="font-serif text-5xl leading-relaxed mb-8 text-[#1C1C1E]">
+            I build software that helps people.
+          </h1>
+          <p className="text-lg text-[#6B5B5B] leading-relaxed">
+            6+ years building production clinical software inside UCSF&apos;s health
+            system — from Epic integrations to interactive data visualizations. I partner
+            with clinicians from discovery through deployment and adoption, and I care
+            about the people on the other side of the screen.
+          </p>
+          <div className="flex gap-4 mt-10">
+            <a
+              href="https://www.linkedin.com/in/nicolette-miller-67a843132/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-[#1C1C1E] border border-[#1C1C1E] px-5 py-2.5 rounded-full hover:bg-[#1C1C1E] hover:text-[#FAF7F4] transition-all"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/nicolettemiller"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-[#1C1C1E] border border-[#1C1C1E] px-5 py-2.5 rounded-full hover:bg-[#1C1C1E] hover:text-[#FAF7F4] transition-all"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
       </section>
 
@@ -108,10 +110,10 @@ export default function Home() {
         <div className="mb-16">
           <div className="flex justify-between items-start mb-3">
             <div>
-              <h2 className="font-serif text-3xl text-[#1C1C1E]">Application Engineer III</h2>
+              <h2 className="font-serif text-3xl text-[#1C1C1E]">Application Engineer II → III</h2>
               <p className="text-[#6B5B5B] mt-1">UCSF Weill Institute for Neurosciences · Bove Lab</p>
             </div>
-            <span className="text-sm text-[#6B5B5B] whitespace-nowrap ml-4">July 2023 – Present</span>
+            <span className="text-sm text-[#6B5B5B] whitespace-nowrap ml-4">Nov 2021 – Present</span>
           </div>
           <p className="text-[#1C1C1E] leading-relaxed mt-4">
             Promoted twice, most recently from Engineer II to III. Served as sole engineer on BRIDGE
@@ -209,7 +211,7 @@ export default function Home() {
           Let&apos;s work together.
         </h2>
         <p className="text-[#6B5B5B] leading-relaxed mb-8 max-w-md">
-          I&apos;m currently open to new opportunities — full stack engineering roles,
+          I&apos;m currently open to new opportunities — full stack and solutions engineering roles,
           healthtech, and mission-driven teams.
         </p>
         <a
